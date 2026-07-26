@@ -23,7 +23,7 @@ function Profile() {
   const fetchPosts = async (id) => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/posts/user/${id}`
+        `https://codealpha-social-media-7fon.onrender.com/api/posts/user/${id}`
       );
 
       setPosts(res.data);

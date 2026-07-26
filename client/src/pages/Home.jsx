@@ -51,7 +51,7 @@ function Home() {
 
 
     const res = await axios.get(
-      `http://localhost:8000/api/posts/user/${user._id}`
+      `https://codealpha-social-media-7fon.onrender.com/api/posts/user/${user._id}`
     );
 
 
@@ -100,7 +100,7 @@ function Home() {
 
 
         const uploadRes = await axios.post(
-          "http://localhost:8000/api/posts/upload",
+          "https://codealpha-social-media-7fon.onrender.com/api/posts/upload",
           formData,
           {
             headers:{
@@ -139,7 +139,7 @@ function Home() {
 
 
       const response = await axios.post(
-        "http://localhost:8000/api/posts/create",
+        "https://codealpha-social-media-7fon.onrender.com/api/posts/create",
         {
           author:user.name,
           userId:user._id,
@@ -201,7 +201,7 @@ function Home() {
 
 
       const res = await axios.put(
-        `http://localhost:8000/api/posts/like/${id}`
+        `https://codealpha-social-media-7fon.onrender.com/api/posts/like/${id}`
       );
 
 
@@ -235,7 +235,7 @@ function Home() {
 
 
       await axios.delete(
-        `http://localhost:8000/api/posts/${id}`
+        `https://codealpha-social-media-7fon.onrender.com/api/posts/${id}`
       );
 
 
@@ -277,7 +277,7 @@ function Home() {
 
 
       const res = await axios.put(
-        `http://localhost:8000/api/posts/comment/${id}`,
+        `https://codealpha-social-media-7fon.onrender.com/api/posts/comment/${id}`,
         {
           comment
         }
@@ -318,7 +318,7 @@ function Home() {
 
 
       const res = await axios.put(
-        `http://localhost:8000/api/posts/${id}`,
+        `https://codealpha-social-media-7fon.onrender.com/api/posts/${id}`,
         {
           content:newContent
         }
