@@ -21,7 +21,7 @@ function Signup() {
   const handleSignup = async () => {
     try {
       const res = await axios.post(
-       "https://codealpha-social-media-7fon.onrender.com/api/users/login",
+       "https://codealpha-social-media-7fon.onrender.com/api/users/signup",
        formData
       );
 
